@@ -1,4 +1,4 @@
-package clases;
+package Clases;
 
 public class Profesor extends Persona {
     private String IDprofesor;
