@@ -1,8 +1,8 @@
 package Gestores;
+
+import Clases.Estudiante;
 import java.io.*;
 import java.util.ArrayList;
-import Clases.Estudiante;
-
 
 public class GestorEstudiantes {
     private ArrayList<Estudiante> estudiantes;
@@ -18,9 +18,9 @@ public class GestorEstudiantes {
         if (!estudiantes.contains(estudiante)) {
             estudiantes.add(estudiante);
             guardarEnArchivo();
-            System.out.println("Estudiante registrado exitosamente.");
+            System.out.println("Estudiante registrado con gran exito.");
         } else {
-            System.out.println("El estudiante ya existe en el sistema.");
+            System.out.println("este estudiante ya esta registrado en el sistema.");
         }
     }
 
@@ -32,7 +32,7 @@ public class GestorEstudiantes {
     
     public void mostrarEstudiantes() {
         if (estudiantes.isEmpty()) {
-            System.out.println("No hay estudiantes registrados.");
+            System.out.println("No hay estudinates aun registrados.");
         } else {
             for (Estudiante e : estudiantes) {
                 System.out.println(e);
@@ -59,7 +59,7 @@ public class GestorEstudiantes {
                 }
             }
         } catch (IOException e) {
-            System.out.println("Error al leer el archivo de estudiantes.");
+            System.out.println("Error al cargar el archivo de estudiantes.");
         }
     }
 
@@ -80,3 +80,4 @@ public class GestorEstudiantes {
         }
     }
 }
+
