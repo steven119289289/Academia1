@@ -1,55 +1,55 @@
-
 package Clases;
 
 public class Persona {
-    private String Nombres;
-    private String Apellidos;
-    private String Email;
-    private String Telefono;
+    private String nombres;
+    private String apellidos;
+    private String email;
+    private String telefono;
 
-    public Persona(String Nombres, String Apellidos, String Email, String Telefono) {
-        this.Nombres = Nombres;
-        this.Apellidos = Apellidos;
-        this.Email = Email;
-        this.Telefono = Telefono;
+    public Persona(String nombres, String apellidos, String email, String telefono) {
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.email = email;
+        this.telefono = telefono;
     }
 
     public String getNombres() {
-        return Nombres;
+        return nombres;
     }
 
     public String getApellidos() {
-        return Apellidos;
+        return apellidos;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public String getTelefono() {
-        return Telefono;
+        return telefono;
     }
 
-    public void setNombres(String Nombres) {
-        this.Nombres = Nombres;
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
     }
 
-    public void setApellidos(String Apellidos) {
-        this.Apellidos = Apellidos;
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 
-    public void setEmail(String Email) {
-        this.Email = Email;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public void setTelefono(String Telefono) {
-        this.Telefono = Telefono;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     @Override
     public String toString() {
-        return "persona{" + "Nombres=" + Nombres + ", Apellidos=" + Apellidos + ", Email=" + Email + ", Telefono=" + Telefono + '}';
+        return "Persona{" + "nombres=" + nombres + ", apellidos=" + apellidos + ", email=" + email + ", telefono=" + telefono + '}';
     }
     
     
 }
+
