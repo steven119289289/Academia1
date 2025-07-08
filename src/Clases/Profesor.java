@@ -1,45 +1,28 @@
 package Clases;
 
 public class Profesor extends Persona {
-    private String IDprofesor;
-    private String Especialidad;
-    private String Tipocontrato;
+    private String idProfesor;
+    private String especialidad;
+    private String tipoContrato;
 
-    public Profesor(String IDprofesor, String Especialidad, String Tipocontrato, String Nombres, String Apellidos, String Email, String Telefono) {
-        super(Nombres, Apellidos, Email, Telefono);
-        this.IDprofesor = IDprofesor;
-        this.Especialidad = Especialidad;
-        this.Tipocontrato = Tipocontrato;
+    public Profesor(String nombres, String apellidos, String email, String telefono,
+                    String idProfesor, String especialidad, String tipoContrato) {
+        super(nombres, apellidos, email, telefono);
+        this.idProfesor = idProfesor;
+        this.especialidad = especialidad;
+        this.tipoContrato = tipoContrato;
     }
 
-    public String getIDprofesor() {
-        return IDprofesor;
-    }
+    public String getIdProfesor() { return idProfesor; }
+    public String getEspecialidad() { return especialidad; }
+    public String getTipoContrato() { return tipoContrato; }
 
-    public String getEspecialidad() {
-        return Especialidad;
-    }
-
-    public String getTipocontrato() {
-        return Tipocontrato;
-    }
-
-    public void setIDprofesor(String IDprofesor) {
-        this.IDprofesor = IDprofesor;
-    }
-
-    public void setEspecialidad(String Especialidad) {
-        this.Especialidad = Especialidad;
-    }
-
-    public void setTipocontrato(String Tipocontrato) {
-        this.Tipocontrato = Tipocontrato;
-    }
+    public void setIdProfesor(String idProfesor) { this.idProfesor = idProfesor; }
+    public void setEspecialidad(String especialidad) { this.especialidad = especialidad; }
+    public void setTipoContrato(String tipoContrato) { this.tipoContrato = tipoContrato; }
 
     @Override
     public String toString() {
-        return "profesor{" + "IDprofesor=" + IDprofesor + ", Especialidad=" + Especialidad + ", Tipocontrato=" + Tipocontrato + '}';
+        return super.toString() + " | ID: " + idProfesor + ", Especialidad: " + especialidad + ", Contrato: " + tipoContrato;
     }
-    
-    
 }
