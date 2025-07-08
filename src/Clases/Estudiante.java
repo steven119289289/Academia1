@@ -1,45 +1,29 @@
 package Clases;
 
 public class Estudiante extends Persona {
-    private String Carnet;
-    private String Carrera;
-    private String Nivel;
+    private String carnet;
+    private String carrera;
+    private String nivel;
 
-    public Estudiante(String Carnet, String Carrera, String Nivel, String Nombres, String Apellidos, String Email, String Telefono) {
-        super(Nombres, Apellidos, Email, Telefono);
-        this.Carnet = Carnet;
-        this.Carrera = Carrera;
-        this.Nivel = Nivel;
+    public Estudiante(String nombres, String apellidos, String email, String telefono,
+                      String carnet, String carrera, String nivel) {
+        super(nombres, apellidos, email, telefono);
+        this.carnet = carnet;
+        this.carrera = carrera;
+        this.nivel = nivel;
     }
 
-    public String getCarnet() {
-        return Carnet;
-    }
+    public String getCarnet() { return carnet; }
+    public String getCarrera() { return carrera; }
+    public String getNivel() { return nivel; }
 
-    public String getCarrera() {
-        return Carrera;
-    }
-
-    public String getNivel() {
-        return Nivel;
-    }
-
-    public void setCarnet(String Carnet) {
-        this.Carnet = Carnet;
-    }
-
-    public void setCarrera(String Carrera) {
-        this.Carrera = Carrera;
-    }
-
-    public void setNivel(String Nivel) {
-        this.Nivel = Nivel;
-    }
+    public void setCarnet(String carnet) { this.carnet = carnet; }
+    public void setCarrera(String carrera) { this.carrera = carrera; }
+    public void setNivel(String nivel) { this.nivel = nivel; }
 
     @Override
     public String toString() {
-        return "estudiante{" + "Carnet=" + Carnet + ", Carrera=" + Carrera + ", Nivel=" + Nivel + '}';
+        return super.toString() + " | Carnet: " + carnet + ", Carrera: " + carrera + ", Nivel: " + nivel;
     }
-    
-    
 }
+
