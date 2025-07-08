@@ -29,12 +29,12 @@ public class GestorMatriculas {
         Curso curso = gestorCursos.buscarCurso(codigoCurso);
 
         if (estudiante == null) {
-            System.out.println("Estudiante no encontrado.");
+            System.out.println("Estudiante no se encuentra.");
             return;
         }
 
         if (curso == null) {
-            System.out.println("Curso no encontrado.");
+            System.out.println("Curso no existe.");
             return;
         }
 
@@ -52,7 +52,7 @@ public class GestorMatriculas {
    
     public void mostrarMatriculas() {
         if (matriculas.isEmpty()) {
-            System.out.println("No hay matrículas registradas.");
+            System.out.println("No hay matriculas registradas.");
         } else {
             for (Matricula m : matriculas) {
                 System.out.println(m);
@@ -95,7 +95,7 @@ public class GestorMatriculas {
                 }
             }
         } catch (IOException e) {
-            System.out.println("Error al leer el archivo de matrículas.");
+            System.out.println("Error al cargar el archivo de matriculas.");
         }
     }
 
@@ -108,7 +108,7 @@ public class GestorMatriculas {
                            m.getFechaMatricula());
             }
         } catch (IOException e) {
-            System.out.println("Error al guardar el archivo de matrículas.");
+            System.out.println("Error al guardar el archivo de matriculas.");
         }
     }
 }
