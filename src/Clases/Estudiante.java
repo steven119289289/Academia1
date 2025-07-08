@@ -1,4 +1,4 @@
-package clases;
+package Clases;
 
 public class Estudiante extends Persona {
     private String Carnet;
