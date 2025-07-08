@@ -90,7 +90,7 @@ public class GestorCursos {
                 pw.println(c.getCodigo() + "," +
                            c.getNombre() + "," +
                            c.getDescripcion() + "," +
-                           c.getProfesor().getIdProfesor() + "," +
+                           c.getProfesor().getIDProfesor() + "," +
                            c.getCapacidadMaxima());
             }
         } catch (IOException e) {
