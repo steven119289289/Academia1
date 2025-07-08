@@ -92,7 +92,7 @@ public class Academia1 {
 
                    
                     for (Profesor p : gestorProfesores.getProfesores()) {
-                        if (p.getIDProfesor().equalsIgnoreCase(idProfesor)) {
+                        if (p.getIdProfesor().equalsIgnoreCase(idProfesor)) {
                             profeAsignado = p;
                             break;
                         }
@@ -105,7 +105,7 @@ public class Academia1 {
 
                     System.out.print("Capacidad maxima del curso: ");
                     int capacidad = scanner.nextInt();
-                    scanner.nextLine(); 
+                    scanner.nextLine();
 
                     Curso nuevoCurso = new Curso(codigo, nombreCurso, descripcion, profeAsignado, capacidad);
                     gestorCursos.agregarCurso(nuevoCurso);
@@ -115,7 +115,7 @@ public class Academia1 {
                     System.out.println("\n--- MATRICULA DE ESTUDIANTE ---");
                     System.out.print("Carnet del estudiante: ");
                     String carnetMat = scanner.nextLine();
-                    System.out.print("Código del curso: ");
+                    System.out.print("Codigo del curso: ");
                     String codigoMat = scanner.nextLine();
 
                     gestorMatriculas.matricular(carnetMat, codigoMat);
@@ -142,13 +142,14 @@ public class Academia1 {
                     break;
 
                 case 0:
-                    System.out.println("Gracias por usar el sistema");
+                    System.out.println("Muchas gracias por usar :).");
                     break;
 
                 default:
-                    System.out.println("Opción invalida. Intente de nuevo.");
+                    System.out.println("Opcion no valida. Intente de nuevo.");
             }
 
         } while (opcion != 0);
     }
 }
+
