@@ -1,6 +1,6 @@
 package Gestores;
 
-import clases.Profesor;
+import Clases.Profesor;
 import java.io.*;
 import java.util.ArrayList;
 
