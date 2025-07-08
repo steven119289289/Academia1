@@ -92,7 +92,7 @@ public class Academia1 {
 
                    
                     for (Profesor p : gestorProfesores.getProfesores()) {
-                        if (p.getIdProfesor().equalsIgnoreCase(idProfesor)) {
+                        if (p.getIDProfesor().equalsIgnoreCase(idProfesor)) {
                             profeAsignado = p;
                             break;
                         }
@@ -105,7 +105,7 @@ public class Academia1 {
 
                     System.out.print("Capacidad maxima del curso: ");
                     int capacidad = scanner.nextInt();
-                    scanner.nextLine(); // limpiar buffer
+                    scanner.nextLine(); 
 
                     Curso nuevoCurso = new Curso(codigo, nombreCurso, descripcion, profeAsignado, capacidad);
                     gestorCursos.agregarCurso(nuevoCurso);
