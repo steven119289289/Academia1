@@ -1,7 +1,7 @@
 package Gestores;
 import java.io.*;
 import java.util.ArrayList;
-import clases.Estudiante;
+import Clases.Estudiante;
 
 
 public class GestorEstudiantes {
