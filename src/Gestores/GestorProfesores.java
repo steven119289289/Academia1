@@ -67,17 +67,19 @@ public class GestorProfesores {
     private void guardarEnArchivo() {
         try (PrintWriter pw = new PrintWriter(new FileWriter(archivo))) {
             for (Profesor p : profesores) {
-                pw.println(p.getIDprofesor()+ "," +
+                pw.println(p.getIdProfesor() + "," +
                            p.getNombres() + "," +
                            p.getApellidos() + "," +
                            p.getEmail() + "," +
                            p.getTelefono() + "," +
                            p.getEspecialidad() + "," +
-                           p.getTipocontrato());
+                           p.getTipoContrato());
             }
         } catch (IOException e) {
             System.out.println("Error al guardar el archivo de profesores.");
         }
     }
 }
+
+
 
