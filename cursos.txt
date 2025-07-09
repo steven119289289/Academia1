@@ -1,0 +1,3 @@
+R0001,Medicina,medicina1,I0001,3
+Q1122,ing.sistemas,ing.sistemas 3,55T00,3
+Y0001,medicina,medicina 2,T001,5
